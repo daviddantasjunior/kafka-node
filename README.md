@@ -1,24 +1,5 @@
-# Micro-serviço com Node.js
+# O que pode ser melhorado?
 
-- Utilizando Apache Kafka;
-- Utilizando Node;
-
-## Aplicações
-
-- API principal;
-- Geração de certificado;
-
-##  Fluxo da aplicação
-
-- API principal envia uma mensagem pro serviço de certificado para gerar o certificado;
-- Micro-serviço de certificado devolve uma resposta (síncrona/assíncrona);
-
-Se conseguir síncrona/assíncrona:
-
-- Receber uma resposta assíncrona de quando o e-mail com o certificado foi enviado;
-
-##  O que sabemos?
-
-- REST(latência)
-- REDIS / RabbitMQ / **Kafka**(Nubank, Uber, Paypal e Netflix);
-
+- Consumer lento para iniciar;
+- Adicionar um framework como Molecular, Seneca...;
+- Kafka pode receber uma resposta específica a uma mensagem produzida (algo como expectResponse);
